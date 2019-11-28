@@ -8,7 +8,7 @@ Simple expense tracker..
     1. `git clone https://github.com/ejulfaey/laravel-expense.git <your-project-name>`
     2. `cd <your-project-name>`
     3. `composer install`
-    4.  copy from .env.example to .env
+    4.  Copy from .env.example to .env
     5.  Configure your database connection.
     6.  `php artisan key:generate`
     7.  `composer dump-autoload`
