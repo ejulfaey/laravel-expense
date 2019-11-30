@@ -28,4 +28,8 @@ Simple expense tracker..
 
 Method | Endpoint | Parameter(s)|
 ---|---|---|
-GET | /list | - |
+GET | `/api/list` | - |
+POST | `/api/store` | item_id, amount |
+GET | `/api/view/{id}` | - |
+PUT | `/api/update/{id}` | item_id, amount |
+DELETE | `/api/delete/{id}` | - |
