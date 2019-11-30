@@ -20,4 +20,4 @@ Simple expense tracker..
 ## Attention!!!
 
 1. Change logic operation from route.php to App\Http\ExpenseController
-2. All routes have name, you can navigate just by calling their name instead of endpoint(eg:/foo/bar/test/)
+2. All routes have name, you can navigate to the page just calling their name instead of endpoint(eg:/foo/bar/test/)
