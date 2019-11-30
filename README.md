@@ -26,10 +26,12 @@ Simple expense tracker..
 
 ### You can use API tools such as Postman for better testing.
 
+`http://localhost:8000/api + Endpoint`
+
 Method | Endpoint | Parameter(s)|
 ---|---|---|
-GET | `/api/list` | - |
-POST | `/api/store` | item_id, amount |
-GET | `/api/view/{id}` | - |
-PUT | `/api/update/{id}` | item_id, amount |
-DELETE | `/api/delete/{id}` | - |
+GET | `/list` | - |
+POST | `/store` | item_id, amount |
+GET | `/view/{id}` | - |
+PUT | `/update/{id}` | item_id, amount |
+DELETE | `/delete/{id}` | - |
