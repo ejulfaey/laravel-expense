@@ -19,8 +19,9 @@ Simple expense tracker..
 
 ## Attention!!!
 
-1. Moved logical operation from web.php to App\Http\ExpenseController
-2. All routes have name, you can navigate to the page just calling by their name instead of endpoint(eg:/foo/bar/test/)
+1. Moved logical operation from `web.php` to `App\Http\Controllers\ExpenseController`.
+2. All routes have name, you can navigate to the page just calling by their name instead of endpoint(eg:/foo/bar/test/).
+3. Check the API code in `routes\api.php` & `App\Http\Controllers\Api\ExpenseController`.
 
 ## API Documentation
 
