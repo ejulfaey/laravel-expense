@@ -15,3 +15,9 @@ Simple expense tracker..
     8.  `php artisan config:cache`
     9.  `php artisan migrate`
 2. Done, you may run the application. Good Luck!
+
+
+## Attention!!!
+
+1. Change logic operation from route.php to App\Http\ExpenseController
+2. All

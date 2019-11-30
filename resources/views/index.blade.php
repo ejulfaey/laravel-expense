@@ -30,8 +30,8 @@
                             <td>{{ $expense->amount }}</td>
                             <td>{{ date('d M Y', strtotime($expense->created_at)) }}</td>
                             <td>
-                                <a href="/edit/{{ $expense->id }}" class="btn btn-sm btn-warning">Edit</a>
-                                <a href="/delete/{{ $expense->id }}" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="{{ route('edit', $expense) }}" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="{{ route('delete', $expense) }}" class="btn btn-sm btn-danger">Delete</a>
                             </td>
                         </tr>
                         @empty
@@ -56,7 +56,7 @@
                         New Expenses
                     </div>
                     <div class="card-body">
-                        <form method="post" action="/store" id="form">
+                        <form method="post" action="{{ route('store') }}" id="form">
                             @csrf
                             <div class="form-group">
                                 <label for="item">Item</label>
@@ -71,7 +71,7 @@
                         </form>
                     </div>
                     <div class="card-footer border-0 text-right bg-white">
-                        <input type="submit" form="form" class="btn btn-primary" value="Add Expenses">
+                        <input type="submit" form="form" class="btn btn-primary" value="Save">
                     </div>
                 </div>
 

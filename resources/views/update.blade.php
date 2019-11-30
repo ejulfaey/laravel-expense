@@ -23,15 +23,15 @@
                         <th>Action</th>
                     </thead>
                     <tbody>
-                        @forelse($expenses as $expense)
+                        @forelse($expenses as $exp)
                         <tr>
                             <td align="center">{{ $loop->iteration }}</td>
-                            <td>{{ $expense->item }}</td>
-                            <td>{{ $expense->amount }}</td>
-                            <td>{{ date('d M Y', strtotime($expense->created_at)) }}</td>
+                            <td>{{ $exp->item }}</td>
+                            <td>{{ $exp->amount }}</td>
+                            <td>{{ date('d M Y', strtotime($exp->created_at)) }}</td>
                             <td>
-                                <a href="/edit/{{ $expense->id }}" class="btn btn-sm btn-warning">Edit</a>
-                                <a href="/delete/{{ $expense->id }}" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="{{ route('edit', $exp) }}" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="{{ route('delete', $exp) }}" class="btn btn-sm btn-danger">Delete</a>
                             </td>
                         </tr>
                         @empty
@@ -56,7 +56,7 @@
                         Update {{ $expense->item }}
                     </div>
                     <div class="card-body">
-                        <form method="post" action="/update/{{$expense->id}}" id="form">
+                        <form method="post" action="{{ route('update', $expense) }}" id="form">
                             @csrf
                             <div class="form-group">
                                 <label for="item">Item</label>
@@ -70,7 +70,8 @@
                         </form>
                     </div>
                     <div class="card-footer border-0 text-right bg-white">
-                        <input type="submit" form="form" class="btn btn-primary" value="Update">
+                        <a href="{{ route('index') }}" class="btn btn-warning">Back</a>
+                        <input type="submit" form="form" class="btn btn-primary" value="Save">
                     </div>
                 </div>
 
