@@ -31,7 +31,7 @@ Simple expense tracker..
 Method | Endpoint | Parameter(s)|
 ---|---|---|
 GET | `/list` | - |
-POST | `/store` | item_id, amount |
+POST | `/store` | `item_id`, `amount` |
 GET | `/view/{id}` | - |
-PUT | `/update/{id}` | item_id, amount |
+PUT | `/update/{id}` | `item_id`, `amount` |
 DELETE | `/delete/{id}` | - |
