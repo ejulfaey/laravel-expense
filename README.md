@@ -25,7 +25,7 @@ Simple expense tracker..
 
 ## API Documentation
 
-### You can use API tools such as Postman for better testing.
+### You can use API tools such as [Postman]: https://www.getpostman.com/ for better testing.
 
 `http://localhost:8000/api + Endpoint`
 
