@@ -19,5 +19,13 @@ Simple expense tracker..
 
 ## Attention!!!
 
-1. Change logic operation from route.php to App\Http\ExpenseController
-2. All routes have name, you can navigate to the page just calling their name instead of endpoint(eg:/foo/bar/test/)
+1. Moved logical operation from web.php to App\Http\ExpenseController
+2. All routes have name, you can navigate to the page just calling by their name instead of endpoint(eg:/foo/bar/test/)
+
+## API Documentation
+
+### You can use API tools such as Postman for better testing.
+
+Method | Endpoint | Parameter(s)|
+---|---|---|
+GET | /list | - |
