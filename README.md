@@ -22,7 +22,7 @@ GET | `/view/{id}` | - |
 PUT | `/update/{id}` | `item_id`, `amount` |
 DELETE | `/delete/{id}` | - |
 
-## Getting Started
+## Steps to clone project
 
 1. Open your terminal or command prompt, then copy/paste the command given:
     1. `git clone https://github.com/ejulfaey/laravel-expense.git <your-project-name>`
